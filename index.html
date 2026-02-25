@@ -3,50 +3,84 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Presente de Aniversário 🎂</title>
+    <title>Feliz Aniversário, (nick da lenda)! 🎂</title>
     <link href="https://fonts.cdnfonts.com/css/boldscript" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" type="image/png" href="imgs/favicon.png">
   </head>
   <body>
-    <h1>Feliz Aniversário, (nome da lenda)!</h1>
+
+    <!-- Partículas flutuantes de fundo -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Corações decorativos -->
+    <div class="floating-hearts" id="floatingHearts"></div>
+
+    <h1 class="title-anim">
+      <span class="title-emoji">🎂</span>
+      Feliz Aniversário,<br><span class="highlight">(nome da lenda)</span>!
+      <span class="title-emoji">✨</span>
+    </h1>
+
+    <p class="subtitle">Clique nas cartinhas abaixo 💌</p>
 
     <div class="container">
-      <div class="card" data-modal="modal1">Carta 1</div>
-      <div class="card" data-modal="modal2">Gift Card</div>
-      <div class="card" data-modal="modal3">Carta 2</div>
+      <div class="card" data-modal="modal1">
+        <div class="card-icon">💌</div>
+        <div class="card-label">Carta 1</div>
+        <div class="card-sparkle"></div>
+      </div>
+      <div class="card card-center" data-modal="modal2">
+        <div class="card-icon">🎁</div>
+        <div class="card-label">Gift Card</div>
+        <div class="card-sparkle"></div>
+      </div>
+      <div class="card" data-modal="modal3">
+        <div class="card-icon">✉️</div>
+        <div class="card-label">Carta 2</div>
+        <div class="card-sparkle"></div>
+      </div>
     </div>
 
+    <!-- Modal 1 -->
     <div class="modal" id="modal1">
       <div class="modal-content">
-        <span class="close">&times;</span>
+        <button class="close" aria-label="Fechar">&times;</button>
+        <div class="modal-icon">💌</div>
         <h2>Mensagem 1</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
+        <div class="modal-hearts"></div>
       </div>
     </div>
 
+    <!-- Modal 2 -->
     <div class="modal" id="modal2">
       <div class="modal-content">
-        <span class="close">&times;</span>
+        <button class="close" aria-label="Fechar">&times;</button>
+        <div class="modal-icon">🎁</div>
         <h2>Presente</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris.
         </p>
+        <div class="modal-hearts"></div>
       </div>
     </div>
 
+    <!-- Modal 3 -->
     <div class="modal" id="modal3">
       <div class="modal-content">
-        <span class="close">&times;</span>
+        <button class="close" aria-label="Fechar">&times;</button>
+        <div class="modal-icon">✉️</div>
         <h2>Mensagem 2</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute
           irure dolor in reprehenderit in voluptate velit esse.
         </p>
+        <div class="modal-hearts"></div>
       </div>
     </div>
 
