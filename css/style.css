@@ -55,6 +55,13 @@ body {
   z-index: 0;
 }
 
+.casal {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  border-radius: 5px;
+}
+
 .heart-float {
   position: absolute;
   bottom: -50px;
@@ -217,6 +224,8 @@ h1 {
   font-size: 2.2rem;
   display: block;
   animation: iconBounce 2.5s ease-in-out infinite;
+  text-align: center;
+  width: 100px;
 }
 
 .card:nth-child(2) .card-icon { animation-delay: 0.4s; }
@@ -299,7 +308,7 @@ h1 {
   background: linear-gradient(160deg, #fff8fb, #f0e8f5);
   padding: 50px 40px 40px;
   border-radius: 28px;
-  width: 420px;
+  width: 480px;
   max-width: 90vw;
   text-align: center;
   position: relative;
